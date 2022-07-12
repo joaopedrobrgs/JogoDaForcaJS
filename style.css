@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orange;
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#pageContainer{
+    width: 1150px;
+    margin: auto;
+}
+
+#forcaContainer{
+    margin-bottom: 20px;
+}
+
+#wordLettersContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wordLettersWrite{
+    border-bottom: solid 2px #8b008b;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#keyboardContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    grid-gap: 15px;
+}
+
+.keyboardLetters{
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    color: purple;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.keyboardLetters:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: transform 100ms;
+}
+
+#gamepad:hover{
+    cursor: pointer;
+}
+
+#gamepadImage{
+    width: 25px;
+    padding: 0;
+}
+
+#categoryContainer{
+    font-size: 20px;
+}
+
+#gameOverScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#gameOverMessage{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#playAgainButton{
+    font-size: 20px;
+    padding: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+}
+
+#playAgainButton:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: all 200ms;
+}
+
+@media screen and (max-width: 600px){
+
+body{
+    display: block;
+    width: 390px;
+    margin: auto;
+}
+
+#pageContainer{
+    margin-top: 10vh;
+    display: block;
+    width: 100%;
+}
+
+#forcaContainer{
+    width: 100%;
+}
+
+#forca{
+    margin: auto;
+}
+
+#wordLettersContainer{
+    width: 100%;
+    text-align: center;
+}
+
+#keyboardContainer{
+    width: 100%;
+}
+
+}
+
+
